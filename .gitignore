@@ -1,0 +1,13 @@
+﻿# Ignore everything by default
+*
+
+# Keep Git metadata rules working
+!.gitignore
+
+# Allow directory traversal
+!*/
+!**/
+
+# Keep markdown content only
+!*.md
+!**/*.md
