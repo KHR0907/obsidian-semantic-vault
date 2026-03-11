@@ -1,76 +1,83 @@
-﻿# Semantic Vault
+# Semantic Vault
 
-Obsidian 3D Semantic Graph 플러그인 테스트를 위한 공개용 Obsidian vault 데이터셋입니다. 이 저장소에는 의미 기반 클러스터링과 3D 배치 테스트에 사용할 Markdown 노트만 포함되어 있습니다.
+[![ko](https://img.shields.io/badge/lang-한국어-red.svg)](README.ko.md)
 
-## 구성
+A public Korean-language Obsidian vault dataset for testing the [Obsidian 3D Semantic Graph](https://github.com/hyungrae0907/obsidian-3d-semantic-graph) plugin. This repository contains only Markdown notes designed for embedding-based semantic clustering and 3D layout evaluation.
 
-- 주제 수: 25개
-- 주제별 노트 수: 30개
-- 총 노트 수: 750개
-- 포맷: Obsidian Markdown (`.md`)
-- 언어: 한국어
+## Overview
 
-## 주제 목록
+| Item | Value |
+|------|-------|
+| Topics | 25 |
+| Notes per topic | 30 |
+| Total notes | 750 |
+| Format | Obsidian Markdown (`.md`) |
+| Language | Korean |
 
-- 건강
-- 과학
-- 여행
-- 요리
-- 음악과 예술
-- 인공지능
-- 철학
-- 크로스오버
-- 프로그래밍
-- 경제학
-- 심리학
-- 역사
-- 수학
-- 문학
-- 환경과 생태
-- 우주와 천문학
-- 스포츠
-- 영화와 미디어
-- 교육
-- 법과 정치
-- 건축과 디자인
-- 언어학
-- 농업과 식량
-- 에너지와 기후
-- 게임과 인터랙션
+## Topics
 
-## 데이터 특성
+- Health
+- Science
+- Travel
+- Cooking
+- Music & Art
+- Artificial Intelligence
+- Philosophy
+- Crossover
+- Programming
+- Economics
+- Psychology
+- History
+- Mathematics
+- Literature
+- Environment & Ecology
+- Space & Astronomy
+- Sports
+- Film & Media
+- Education
+- Law & Politics
+- Architecture & Design
+- Linguistics
+- Agriculture & Food
+- Energy & Climate
+- Games & Interaction
 
-각 노트는 다음 형식을 따릅니다.
+## Note Structure
 
-- YAML frontmatter 포함
-- 본문 길이 약 300~500자
-- 주제별 카테고리와 태그 포함
-- 관련 노트 섹션에 위키링크 포함
+Each note follows a consistent format:
 
-이 구조는 임베딩 기반 의미 유사도 분석에서 다음 특성을 테스트하기에 적합합니다.
+- YAML frontmatter with category and tags
+- Body text of approximately 300–500 characters
+- Wikilinks to related notes in the "Related Notes" section
 
-- 같은 주제 노트끼리의 밀집 클러스터 형성
-- 주제 경계에 있는 노트의 중간 배치
-- 위키링크와 의미 유사도의 상관관계 확인
-- UMAP 기반 3D 레이아웃의 분리도와 응집도 확인
+This structure is suitable for testing the following characteristics in embedding-based semantic similarity analysis:
 
-## 저장소 정책
+- Dense cluster formation among notes within the same topic
+- Intermediate placement of notes at topic boundaries
+- Correlation between wikilinks and semantic similarity
+- Separation and cohesion of UMAP-based 3D layouts
 
-이 저장소는 공개 배포를 전제로 정리되어 있습니다.
+## Repository Policy
 
-- 포함: `README.md`, 주제 폴더의 Markdown 노트
-- 제외: `.obsidian`, 플러그인 파일, 캐시, 로컬 설정, 생성 스크립트
+This repository is organized for public distribution.
 
-## 사용 방법
+- **Included:** `README.md`, `README.ko.md`, Markdown notes in topic folders
+- **Excluded:** `.obsidian`, plugin files, cache, local settings, generation scripts
 
-1. 이 저장소를 클론합니다.
-2. Obsidian에서 vault로 엽니다.
-3. 3D Semantic Graph 플러그인에서 OpenAI API 키를 설정합니다.
-4. 임베딩을 생성하고 3D 그래프를 확인합니다.
+## Getting Started
 
-## 기대 결과
+1. Clone this repository.
+2. Open it as a vault in Obsidian.
+3. Set your OpenAI API key in the 3D Semantic Graph plugin settings.
+4. Generate embeddings and explore the 3D graph.
 
-- 25개 주제가 의미적으로 구분된 군집으로 나타나야 합니다.
-- 유사한 노트는 3D 공간에서 더 가깝게 배치되어야 합니다.
-- 크로스오버 성격의 노트는 여러 군집 사이의 연결 지점에 배치될 수 있습니다.
-- 노트 간 링크 구조와 임베딩 기반 거리 사이의 차이를 비교해볼 수 있습니다.
+## Expected Results
+
+- 25 topics should appear as semantically distinct clusters.
+- Similar notes should be placed closer together in 3D space.
+- Crossover notes may appear at connection points between multiple clusters.
+- You can compare the differences between link structure and embedding-based distances.
+
+## License
+
+This dataset is provided for testing and research purposes.
